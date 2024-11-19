@@ -32,13 +32,18 @@ export default function ContactPage() {
                             </Link>
                             to speak with us if you have additional questions or need assistance regarding jobs or projects, and we’ll call you at your chosen time.
                         </p>
-                        <h2>ADDRESS</h2>
+                        <br></br>
+                        <br></br>
+                        <h2><strong>ADDRESS</strong></h2>
                         <p style={styles.centeredText}>Example Street</p>
-                        <p style={styles.centeredText}>Salinas, CA 99999</p>
-                        
-                        <h2>CALL US TODAY!</h2>
-                        <p style={styles.centeredText}>XXX-XXX-XXXX</p>
-                        
+                        <p style={styles.centeredText}>Salinas, CA 93901</p>
+                        <br></br>
+                        <h2><strong>CALL US OR EMAIL TODAY!</strong></h2>
+                        <p style={styles.centeredText}>(831) 800-4627 <br></br>Sigfridovasquez123@gmail.com</p>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
                         <p>For all other inquiries, please complete and submit the form.</p>
                     </div>
 
@@ -114,7 +119,7 @@ const styles: { [key: string]: CSSProperties } = {
     mainContent: {
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center',
+        alignItems: 'stretch', // Stretch children vertically to fill container
         width: '100%',
         padding: '20px',
     },
@@ -123,9 +128,11 @@ const styles: { [key: string]: CSSProperties } = {
         gap: '20px',
         maxWidth: '900px',
         width: '100%',
+        height: 'auto', // Allow containers to expand as needed
     },
     textSection: {
-        flex: 1,
+        flex: 1,  // Allow text section to grow and take up available space
+        minHeight: '500px',  // Ensure a minimum height
         backgroundColor: '#D9D9D9',
         padding: '30px', 
         borderRadius: '8px',
@@ -134,7 +141,8 @@ const styles: { [key: string]: CSSProperties } = {
         marginBottom: '20px', 
     },
     formSection: {
-        flex: 1,
+        flex: 1, // Allow form section to grow and take up available space
+        minHeight: '500px', // Ensure a minimum height
         backgroundColor: '#FFFDFD',
         padding: '20px',
         borderRadius: '8px',
